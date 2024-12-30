@@ -47,7 +47,7 @@ async function renderPokemons(page) {
 async function renderPagination() {
     paginationContainer.innerHTML = ""
 
-    const maxButtons = 10
+    const maxButtons = 5
 
     // Me dará la mitad del rango de botones visibles
     const halfRange = Math.floor(maxButtons / 2) // 2

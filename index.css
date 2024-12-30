@@ -12,8 +12,13 @@ body {
     min-height: 100dvh;
 }
 #pagination {
-    width: max-content;
-    margin: 30px auto 0 auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #pagination button {
     margin: 5px;
@@ -25,11 +30,11 @@ body {
     color: white;
 }
 #pokemon-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     width: 100%;
     max-width: 1200px;
-    margin: 70px auto;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .cardPokemon {
     display: flex;
@@ -42,8 +47,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     img {
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
+        width: 100%;
     }
 }
 
